@@ -27,13 +27,10 @@ function SignupForm() {
     formDataToSend.append("resume", formData.resume);
 
     try {
-      const response = await fetch(
-        "https://apiv1-kpjg.onrender.com/api/users/signup",
-        {
-          method: "POST",
-          body: formDataToSend,
-        }
-      );
+      const response = await fetch("http:localhost:5000/api/users/signup", {
+        method: "POST",
+        body: formDataToSend,
+      });
 
       if (!response.ok) {
         throw new Error("Something went wrong!");
