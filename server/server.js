@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: "https://yourhr-dev.netlify.app",
+  origin: "http://localhost:5173",
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type",
 };
